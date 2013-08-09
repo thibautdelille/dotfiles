@@ -26,6 +26,11 @@ function google() {
 	open /Applications/Google\ Chrome.app/ "http://www.google.com/search?q= $1"; 
 }
 
+# open chrome at the url
+function chrome() { 
+	open /Applications/Google\ Chrome.app/ "$1"; 
+}
+
 # Change working directory to the top-most Finder window location
 function cdf() { # short for `cdfinder`
 	cd "$(osascript -e 'tell app "Finder" to POSIX path of (insertion location as alias)')"
